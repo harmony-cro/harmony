@@ -1,0 +1,106 @@
+Harmony site — Gemini image prompts
+====================================
+Paste the GLOBAL PREFIX before each full prompt below (or prepend it yourself in Gemini).
+
+Suggested export filenames (map to code later):
+  home-hero          -> home-hero.webp (or .png)
+  home-marketing     -> home-marketing.webp
+  home-web           -> home-web.webp
+  home-commerce      -> home-commerce.webp
+  about-workspace    -> about-workspace.webp
+  about-julian       -> about-julian.webp
+  about-elena        -> about-elena.webp
+  about-soren        -> about-soren.webp
+  services-web       -> services-web.webp
+  contact-map        -> contact-map.webp
+
+Code keys: homeHero, homeMarketing, homeWeb, homeCommerce, aboutWorkspace,
+aboutJulian, aboutElena, aboutSoren, servicesWeb, and contactMapImageUrl in site.ts.
+
+Tip: export at ~2x your max display size for sharp next/image results.
+
+
+--------------------------------------------------------------------------------
+GLOBAL PREFIX (use with every image)
+--------------------------------------------------------------------------------
+
+Harmony digital atelier — global style: Cinematic, ultra-refined luxury creative agency aesthetic. Deep charcoal and black surfaces, subtle warm gold accents (not yellow plastic), soft controlled lighting, high dynamic range, minimal composition, architectural precision, editorial fashion-magazine quality. Photorealistic where noted; no text, no logos, no watermarks, no UI chrome unless the prompt explicitly asks for a screen. Clean negative space; works well when desaturated to grayscale in post.
+
+
+--------------------------------------------------------------------------------
+1. homeHero — target aspect ~3:4 portrait
+--------------------------------------------------------------------------------
+
+(Global style) Abstract hero image: a single sculptural beam of warm antique gold light cutting through a near-black void, faint atmospheric haze, subtle lens bloom, museum-grade minimalism, ultra high resolution, vertical emphasis suitable for a 3:4 crop.
+
+
+--------------------------------------------------------------------------------
+2. homeMarketing — target ~16:9
+--------------------------------------------------------------------------------
+
+(Global style) Overhead or three-quarter view of a premium laptop on a dark stone or matte desk, screen showing elegant marketing analytics — soft charts, KPI tiles, restrained UI — shallow depth of field, reflections controlled, moody studio lighting, 16:9 composition.
+
+
+--------------------------------------------------------------------------------
+3. homeWeb — target ~1:1 (center-weighted)
+--------------------------------------------------------------------------------
+
+(Global style) Close-up still life: a high-end smartphone lying on dark walnut or slate, screen on showing a minimal luxury app interface (generic patterns, no readable words), soft side light, macro detail, square-friendly framing with subject centered.
+
+
+--------------------------------------------------------------------------------
+4. homeCommerce — target ~4:5 portrait
+--------------------------------------------------------------------------------
+
+(Global style) Interior of an upscale boutique retail space: polished concrete or stone floor, black metal fixtures, warm accent lighting, sparse garment displays, architectural lines, no visible brand names, quiet luxury, vertical 4:5 friendly composition.
+
+
+--------------------------------------------------------------------------------
+5. aboutWorkspace — wide landscape (~3:2 or 16:9)
+--------------------------------------------------------------------------------
+
+(Global style) Minimal dark architectural studio: large windows, deep shadows, a long empty work table, single designer chair, plaster or concrete walls, one sculptural lamp, golden hour or single-source light, panoramic landscape crop, no people.
+
+
+--------------------------------------------------------------------------------
+6. aboutJulian — target ~4:5 portrait (featured team card)
+--------------------------------------------------------------------------------
+
+(Global style) Stylized editorial portrait of a creative director archetype: man in his late 30s, sharp jaw, short dark hair, wearing a black tailored jacket, calm confident expression, three-quarter turn, dark seamless backdrop, soft Rembrandt lighting, fashion editorial, not a celebrity likeness, not a specific real person — original face. 4:5 portrait crop, shoulders up with slight torso.
+
+
+--------------------------------------------------------------------------------
+7. aboutElena — target ~1:1
+--------------------------------------------------------------------------------
+
+(Global style) Stylized editorial portrait of a lead engineer archetype: woman early 30s, pulled-back hair, minimal jewelry, black or charcoal knit top, intelligent focused gaze, cool-neutral lighting with one warm rim light, dark studio background, original face not matching any real individual, square crop, head and shoulders.
+
+
+--------------------------------------------------------------------------------
+8. aboutSoren — target ~1:1
+--------------------------------------------------------------------------------
+
+(Global style) Stylized editorial portrait of a brand strategist archetype: man early 40s, light stubble, relaxed tailored shirt, thoughtful half-smile, soft window light from one side, muted interior blur behind, original face, square crop, professional editorial.
+
+
+--------------------------------------------------------------------------------
+9. servicesWeb — target ~16:10
+--------------------------------------------------------------------------------
+
+(Global style) Laptop on a dark architect's desk beside a physical scale model and rolled blueprints (abstract lines only), screen showing a refined wireframe or layout grid (no legible text), monochrome desk objects with gold accent in the scene, dramatic side light, wide 16:10 composition.
+
+
+--------------------------------------------------------------------------------
+10. contactMapImageUrl — wide shallow strip (~21:9 or 3:1, detail in center third)
+--------------------------------------------------------------------------------
+
+(Global style) Abstract monochrome map treatment suggesting a European city center (Zagreb vibe: grid and river hint) as a stylized graphic map, not a copyrighted map tile: soft gray tones on charcoal, subtle topographic or road textures, no readable street names, minimal labels, elegant cartographic poster look, very wide horizontal crop with important detail in the center third (for gradient overlays on the site).
+
+
+--------------------------------------------------------------------------------
+Notes
+--------------------------------------------------------------------------------
+
+- Team portraits: if the model blocks photoreal people, switch to "oil-on-canvas editorial illustration" or "high-end 3D render" while keeping wardrobe and lighting the same.
+
+- After generation: place files in public/images/ (or your CDN) and point lib/stitch-images.ts and lib/site.ts at the new paths/URLs.

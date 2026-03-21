@@ -4,17 +4,20 @@ import { Header } from "@/components/Header";
 import { routing } from "@/i18n/routing";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { DM_Sans, Fraunces } from "next/font/google";
+import { Manrope, Noto_Serif } from "next/font/google";
 import { notFound } from "next/navigation";
 
-const display = Fraunces({
+const notoSerif = Noto_Serif({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-display",
+  variable: "--font-noto-serif",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
-const body = DM_Sans({
+const manrope = Manrope({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-body",
+  variable: "--font-manrope",
+  weight: ["300", "400", "600", "800"],
 });
 
 type Props = {
@@ -53,9 +56,16 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${display.variable} ${body.variable} h-full scroll-smooth`}
+      className={`${notoSerif.variable} ${manrope.variable} dark h-full scroll-smooth`}
     >
-      <body className="flex min-h-full flex-col antialiased">
+      <head>
+        {/* eslint-disable-next-line @next/next/no-page-custom-font -- Material Symbols has no next/font export */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap"
+        />
+      </head>
+      <body className="flex min-h-full flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main id="main-content" className="flex-1">

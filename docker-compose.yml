@@ -1,0 +1,27 @@
+# Deploy the image built by CI (default) or build locally.
+#
+# 1. Set HARMONY_IMAGE to your GHCR image, e.g. ghcr.io/your-org/harmony-web:latest
+# 2. Copy .env.example to .env and adjust (see note on NEXT_PUBLIC_* below).
+#
+# NEXT_PUBLIC_* values are baked in at docker build time. For a published image,
+# set GitHub repository variables NEXT_PUBLIC_SITE_URL and NEXT_PUBLIC_CONTACT_EMAIL
+# before the workflow runs, or build locally:
+#   docker compose build --build-arg NEXT_PUBLIC_SITE_URL=https://yoursite.com ...
+
+name: harmony-web
+
+services:
+  web:
+    image: ${HARMONY_IMAGE:-ghcr.io/your-github-user/harmony-web:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://example.com}
+        NEXT_PUBLIC_CONTACT_EMAIL: ${NEXT_PUBLIC_CONTACT_EMAIL:-hello@example.com}
+    ports:
+      - "${HARMONY_PORT:-3000}:3000"
+    env_file:
+      - path: .env
+        required: false
+    restart: unless-stopped
