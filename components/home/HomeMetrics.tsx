@@ -6,7 +6,6 @@ export async function HomeMetrics() {
 
   const items = [
     { value: t("metric1Value"), label: t("metric1Label") },
-    { value: t("metric2Value"), label: t("metric2Label") },
     { value: t("metric3Value"), label: t("metric3Label") },
     { value: t("metric4Value"), label: t("metric4Label") },
   ];

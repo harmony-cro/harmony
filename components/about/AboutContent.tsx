@@ -72,19 +72,19 @@ export async function AboutContent() {
             <div className="group border border-outline-variant/5 bg-surface p-8 md:col-span-2 md:row-span-2">
               <div className="relative mb-8 aspect-[4/5] overflow-hidden">
                 <Image
-                  src={stitchImages.aboutJulian}
-                  alt={t("julianAlt")}
+                  src={stitchImages.aboutBruno}
+                  alt={t("brunoAlt")}
                   fill
                   className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <h3 className="mb-1 font-headline text-2xl">{t("julianName")}</h3>
+              <h3 className="mb-1 font-headline text-2xl">{t("brunoName")}</h3>
               <p className="mb-4 font-label text-sm uppercase tracking-tighter text-primary">
-                {t("julianRole")}
+                {t("brunoRole")}
               </p>
               <p className="max-w-sm text-sm leading-relaxed text-on-surface-variant">
-                {t("julianBio")}
+                {t("brunoBio")}
               </p>
             </div>
             <div className="flex flex-col justify-between bg-surface-container-low p-6 transition-colors duration-300 hover:bg-surface-container">
