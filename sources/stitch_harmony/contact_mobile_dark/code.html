@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact HARMONY | The Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#dab36a",
+              "inverse-primary": "#735c00",
+              "on-tertiary-fixed-variant": "#454747",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-container": "#b2b3b3",
+              "on-surface-variant": "#d0c5af",
+              "surface-container-lowest": "#0e0e0e",
+              "secondary-container": "#604403",
+              "outline-variant": "#4d4635",
+              "primary-container": "#d4af37",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed-variant": "#574500",
+              "on-background": "#e5e2e1",
+              "primary-fixed": "#ffe088",
+              "on-tertiary-container": "#444546",
+              "inverse-surface": "#e5e2e1",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "surface-container": "#201f1f",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary": "#412d00",
+              "surface-dim": "#131313",
+              "on-primary-container": "#554300",
+              "surface-tint": "#e9c349",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "background": "#131313",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-primary-fixed": "#241a00",
+              "surface-bright": "#3a3939",
+              "tertiary": "#cecece",
+              "on-tertiary": "#2f3131",
+              "error-container": "#93000a",
+              "outline": "#99907c",
+              "surface-container-highest": "#353534",
+              "secondary-fixed": "#ffdea5",
+              "secondary-fixed-dim": "#e9c176",
+              "error": "#ffb4ab",
+              "on-primary": "#3c2f00",
+              "primary-fixed-dim": "#e9c349",
+              "on-secondary-fixed": "#261900",
+              "on-surface": "#e5e2e1",
+              "secondary": "#e9c176",
+              "tertiary-fixed": "#e2e2e2",
+              "on-secondary-fixed-variant": "#5d4201",
+              "primary": "#f2ca50",
+              "surface": "#131313",
+              "surface-variant": "#353534"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .atelier-glass {
+            background-color: rgba(53, 53, 52, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .golden-glow {
+            background: linear-gradient(45deg, #f2ca50, #d4af37);
+        }
+        input:focus + label, input:not(:placeholder-shown) + label {
+            transform: translateY(-1.5rem) scale(0.85);
+            color: #f2ca50;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-[#131313] dark:bg-[#131313] docked full-width top-0 z-50 border-b border-[#353534]/30 sticky">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e5e2e1] uppercase font-['Noto_Serif'] antialiased">
+                HARMONY
+            </div>
+<div class="flex items-center gap-4">
+<span class="text-[#f2ca50] font-['Noto_Serif'] text-sm tracking-tight">HR | EN</span>
+<button class="material-symbols-outlined text-on-surface">menu</button>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section: Rhythmic Asymmetry -->
+<section class="px-6 pt-16 pb-12 overflow-hidden bg-surface">
+<div class="max-w-md mx-auto">
+<span class="text-primary font-label text-xs uppercase tracking-[0.3em] mb-4 block">Inquiry</span>
+<h1 class="font-headline text-5xl leading-tight tracking-tight mb-8">
+                    Let’s create <span class="text-primary italic">extraordinary</span> together.
+                </h1>
+<p class="text-on-surface-variant font-body font-light text-lg leading-relaxed max-w-[85%]">
+                    Our atelier is a space where vision meets precision. Reach out for a private consultation or collaboration.
+                </p>
+</div>
+</section>
+<!-- Vertical Accordion Content Split -->
+<section class="bg-surface-container-lowest grid grid-cols-1 md:grid-cols-[1fr_0.5px_1fr]">
+<!-- Left: Contact Form -->
+<div class="px-6 py-16 max-w-md mx-auto w-full">
+<h2 class="font-headline text-2xl mb-12">Send a Message</h2>
+<form class="space-y-10">
+<div class="relative group">
+<input class="block w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-primary transition-all duration-300 peer text-on-surface" id="name" placeholder=" " type="text"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-wider transition-all duration-300 pointer-events-none peer-focus:text-primary peer-focus:-translate-y-6 peer-focus:scale-90 peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:scale-90" for="name">Your Name</label>
+</div>
+<div class="relative group">
+<input class="block w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-primary transition-all duration-300 peer text-on-surface" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-wider transition-all duration-300 pointer-events-none peer-focus:text-primary peer-focus:-translate-y-6 peer-focus:scale-90 peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:scale-90" for="email">Email Address</label>
+</div>
+<div class="relative group">
+<select class="block w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-primary transition-all duration-300 text-on-surface-variant" id="service">
+<option class="bg-surface">Select Interest</option>
+<option class="bg-surface">Boutique Strategy</option>
+<option class="bg-surface">Visual Identity</option>
+<option class="bg-surface">Digital Experience</option>
+</select>
+</div>
+<div class="relative group">
+<textarea class="block w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-primary transition-all duration-300 peer text-on-surface resize-none" id="message" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-wider transition-all duration-300 pointer-events-none peer-focus:text-primary peer-focus:-translate-y-6 peer-focus:scale-90 peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:scale-90" for="message">Project Details</label>
+</div>
+<button class="w-full golden-glow text-on-primary font-label font-bold text-sm tracking-[0.2em] uppercase py-5 px-8 flex justify-between items-center group" type="submit">
+<span>Send Inquiry</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Asymmetric Divider Line (Mobile Hidden, but keeping structure for atelier feel) -->
+<div class="hidden md:block bg-outline-variant/30 w-[1px]"></div>
+<!-- Right: Details & Visuals -->
+<div class="px-6 py-16 bg-surface-container-low">
+<div class="max-w-md mx-auto flex flex-col h-full justify-between gap-12">
+<!-- Location Grid (Recessed Card) -->
+<div class="p-8 bg-surface-container-lowest border-l-2 border-primary">
+<h3 class="font-headline text-xl mb-4">Paris Atelier</h3>
+<p class="text-on-surface-variant font-body font-light mb-6">
+                            12 Rue de l'Harmonie,<br/>
+                            75001 Paris, France
+                        </p>
+<div class="w-full h-48 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700" data-alt="Stylized map of Paris city center" data-location="Paris" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeGhnL9Y8wWc6IwB_KrLclHrzvaNBsxyBC5B9W_Gjxa7lZvzIWe14KMJRPRn_se8aTUwfh_FU9XEVqq5eTEsA_xTbkZ_SHE9RxxG38A87bQQ_lSaxcTmvjn2S7dnTwwX5VzI02ep_G9Ol0ZHULdXjkjPUIDwPaI8vZpCEuA3EdKDDXqy8VIfchQnlf4kxs1YPdu5E-Q0vjxiTPrzTlWkgvg0nT6jLNwVieW7hRoMwVjHvOCoNF_zWkHH6jcyNzwWfOUH4PS7qsimC7"/>
+</div>
+</div>
+<!-- Connect Section -->
+<div class="space-y-8">
+<div>
+<span class="text-primary font-label text-[10px] uppercase tracking-[0.4em] mb-4 block">Communication</span>
+<div class="space-y-2">
+<a class="block font-headline text-lg hover:text-primary transition-colors" href="mailto:hello@harmony.atelier">hello@harmony.atelier</a>
+<a class="block font-headline text-lg hover:text-primary transition-colors" href="tel:+33123456789">+33 1 23 45 67 89</a>
+</div>
+</div>
+<div>
+<span class="text-primary font-label text-[10px] uppercase tracking-[0.4em] mb-4 block">Social Presence</span>
+<div class="flex flex-wrap gap-8">
+<a class="text-on-surface-variant hover:text-primary font-label text-sm uppercase tracking-widest flex items-center gap-2 group" href="#">
+<span class="w-1 h-1 bg-primary group-hover:w-4 transition-all duration-300"></span>
+                                    Instagram
+                                </a>
+<a class="text-on-surface-variant hover:text-primary font-label text-sm uppercase tracking-widest flex items-center gap-2 group" href="#">
+<span class="w-1 h-1 bg-primary group-hover:w-4 transition-all duration-300"></span>
+                                    LinkedIn
+                                </a>
+<a class="text-on-surface-variant hover:text-primary font-label text-sm uppercase tracking-widest flex items-center gap-2 group" href="#">
+<span class="w-1 h-1 bg-primary group-hover:w-4 transition-all duration-300"></span>
+                                    Pinterest
+                                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Journal (Glass Overlay) -->
+<section class="relative h-[400px] flex items-center justify-center bg-surface overflow-hidden">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover grayscale opacity-20" data-alt="Minimalist luxury interior with golden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVHkjAM_aolQg2OzS6p28TTTQK8eQJ9sdAybNCq_V-xMjKkKqPU1TO4917fifHszpnzne46OY_MWus0_nVvR-ciF_ozamxvHLEYcuANsjU1fxqNAIioc3wzf-Kp3jcZsucJD10Z8TEVWMzcgoz2m8I6nqxmShw1O1JrGNOeEtvRoCkWp6zGSusvkuhrL37CvVLG62DkkJVndLsEFvZfJXVkX5ykkvn-KnPX0EFFiOdaK-FlVEMT3hfLQbJILVaVxKDmjWi1hDg5RkD"/>
+</div>
+<div class="relative atelier-glass p-8 max-w-[90%] w-full border border-outline-variant/20 text-center">
+<h2 class="font-headline text-2xl mb-4">The Atelier Journal</h2>
+<p class="text-on-surface-variant font-light text-sm mb-6 max-w-xs mx-auto">Quarterly insights into the intersection of technology and luxury design.</p>
+<div class="flex border-b border-primary">
+<input class="flex-grow bg-transparent border-none focus:ring-0 text-sm py-3 font-label tracking-wide" placeholder="Your Email Address" type="email"/>
+<button class="material-symbols-outlined text-primary p-2">arrow_forward</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] dark:bg-[#0e0e0e] full-width border-t border-[#353534]/20 font-['Noto_Serif'] font-light tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 py-16 w-full max-w-[1920px] mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-bold text-[#e5e2e1] uppercase">HARMONY</div>
+<p class="text-[#d0c5af] text-sm max-w-xs leading-relaxed">
+                    Crafting digital legacies for those who appreciate the finer details of the modern experience.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] mb-2">Navigation</span>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all" href="#">Services</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all" href="#">Portfolio</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all" href="#">Process</a>
+<a class="text-[#f2ca50]" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] mb-2">Legal</span>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-all" href="#">Privacy Policy</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-all" href="#">Terms of Service</a>
+<div class="mt-8 pt-8 border-t border-outline-variant/10">
+<p class="text-[10px] text-[#d0c5af] uppercase tracking-widest opacity-60">© 2024 HARMONY ATELIER. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

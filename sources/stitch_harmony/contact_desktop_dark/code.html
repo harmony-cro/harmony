@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#dab36a",
+              "inverse-primary": "#735c00",
+              "on-tertiary-fixed-variant": "#454747",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-container": "#b2b3b3",
+              "on-surface-variant": "#d0c5af",
+              "surface-container-lowest": "#0e0e0e",
+              "secondary-container": "#604403",
+              "outline-variant": "#4d4635",
+              "primary-container": "#d4af37",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed-variant": "#574500",
+              "on-background": "#e5e2e1",
+              "primary-fixed": "#ffe088",
+              "on-tertiary-container": "#444546",
+              "inverse-surface": "#e5e2e1",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "surface-container": "#201f1f",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary": "#412d00",
+              "surface-dim": "#131313",
+              "on-primary-container": "#554300",
+              "surface-tint": "#e9c349",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "background": "#131313",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-primary-fixed": "#241a00",
+              "surface-bright": "#3a3939",
+              "tertiary": "#cecece",
+              "on-tertiary": "#2f3131",
+              "error-container": "#93000a",
+              "outline": "#99907c",
+              "surface-container-highest": "#353534",
+              "secondary-fixed": "#ffdea5",
+              "secondary-fixed-dim": "#e9c176",
+              "error": "#ffb4ab",
+              "on-primary": "#3c2f00",
+              "primary-fixed-dim": "#e9c349",
+              "on-secondary-fixed": "#261900",
+              "on-surface": "#e5e2e1",
+              "secondary": "#e9c176",
+              "tertiary-fixed": "#e2e2e2",
+              "on-secondary-fixed-variant": "#5d4201",
+              "primary": "#f2ca50",
+              "surface": "#131313",
+              "surface-variant": "#353534"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .atelier-glass {
+            background-color: rgba(53, 53, 52, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .vertical-accordion-line {
+            width: 0.5px;
+            background-color: rgba(77, 70, 53, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#131313] dark:bg-[#131313] docked full-width top-0 z-50 border-b border-[#353534]/30">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e5e2e1] uppercase font-['Noto_Serif'] antialiased tracking-tight">
+                HARMONY
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#d0c5af] hover:text-[#e5e2e1] transition-colors duration-300 font-['Noto_Serif'] antialiased tracking-tight" href="#">Home</a>
+<a class="text-[#d0c5af] hover:text-[#e5e2e1] transition-colors duration-300 font-['Noto_Serif'] antialiased tracking-tight" href="#">Services</a>
+<a class="text-[#d0c5af] hover:text-[#e5e2e1] transition-colors duration-300 font-['Noto_Serif'] antialiased tracking-tight" href="#">About</a>
+<a class="text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1 font-['Noto_Serif'] antialiased tracking-tight" href="#">Contact</a>
+</div>
+<div class="text-[#f2ca50] font-['Noto_Serif'] antialiased tracking-tight cursor-pointer">
+                HR | EN
+            </div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="min-h-screen pt-24 pb-32">
+<section class="max-w-[1920px] mx-auto px-12 lg:grid lg:grid-cols-[1fr_2fr] gap-24 items-start">
+<!-- Left Column: Editorial Content & Info -->
+<div class="space-y-24 py-12">
+<header class="space-y-6">
+<h1 class="font-headline text-5xl lg:text-7xl leading-tight tracking-tight">
+                        Let's form a <span class="text-primary italic">Dialogue</span>.
+                    </h1>
+<p class="text-on-surface-variant font-light text-lg leading-relaxed max-w-md">
+                        Our atelier operates on the principles of intentionality and precision. Whether you are initiating a new project or seeking an aesthetic consultation, our doors are open.
+                    </p>
+</header>
+<div class="space-y-12">
+<!-- Contact Details -->
+<div class="space-y-8">
+<div class="group">
+<p class="text-xs uppercase tracking-[0.2em] text-primary mb-2">Electronic Mail</p>
+<p class="font-headline text-2xl group-hover:text-primary transition-colors cursor-pointer">concierge@harmony.atelier</p>
+</div>
+<div class="group">
+<p class="text-xs uppercase tracking-[0.2em] text-primary mb-2">Inquiry Line</p>
+<p class="font-headline text-2xl group-hover:text-primary transition-colors cursor-pointer">+385 91 000 4400</p>
+</div>
+<div class="group">
+<p class="text-xs uppercase tracking-[0.2em] text-primary mb-2">Location</p>
+<p class="font-headline text-2xl group-hover:text-primary transition-colors cursor-pointer">Radnička Cesta 42, Zagreb</p>
+</div>
+</div>
+<!-- Social Icons -->
+<div class="flex items-center space-x-8 pt-6">
+<a class="flex items-center space-x-2 text-on-surface-variant hover:text-primary transition-all group" href="#">
+<span class="text-xs uppercase tracking-widest font-semibold">Instagram</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+<a class="flex items-center space-x-2 text-on-surface-variant hover:text-primary transition-all group" href="#">
+<span class="text-xs uppercase tracking-widest font-semibold">Facebook</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: The Form (Rhythmic Asymmetry) -->
+<div class="relative bg-surface-container-lowest p-12 lg:p-24 border-l border-outline-variant/20">
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
+<form class="space-y-16 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Name Field -->
+<div class="relative">
+<label class="block text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-2">Your Identity</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 py-4 px-0 focus:ring-0 focus:border-primary text-on-surface placeholder:text-on-surface-variant/30 font-headline text-xl transition-all" placeholder="Full Name" type="text"/>
+</div>
+<!-- Email Field -->
+<div class="relative">
+<label class="block text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-2">Response Channel</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 py-4 px-0 focus:ring-0 focus:border-primary text-on-surface placeholder:text-on-surface-variant/30 font-headline text-xl transition-all" placeholder="Email Address" type="email"/>
+</div>
+</div>
+<!-- Message Field -->
+<div class="relative">
+<label class="block text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-2">The Inquiry</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant/40 py-4 px-0 focus:ring-0 focus:border-primary text-on-surface placeholder:text-on-surface-variant/30 font-headline text-xl resize-none transition-all" placeholder="Briefly describe your vision..." rows="4"></textarea>
+</div>
+<!-- CTA Button -->
+<div class="pt-8">
+<button class="group relative flex items-center justify-center bg-primary-container text-on-primary px-12 py-6 uppercase text-xs tracking-[0.4em] font-bold hover:bg-primary transition-colors duration-500 overflow-hidden" type="submit">
+<span class="relative z-10">Commence Dialogue</span>
+<div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+</button>
+</div>
+</form>
+<!-- Map / Visual Recess -->
+<div class="mt-24 h-96 bg-surface-container-low overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale opacity-40 mix-blend-luminosity" data-alt="Monochrome architectural map of Zagreb city center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkWjeFSA-LG-hVlMFQY8wG2kz3LTrOy_o4Ih6_q2tl0hs_z2TfXu0aP9yElMf6nslad3PyT-1LI0xbcHlJG4LIQLSwnjPfVP2Ts4AOq2O7OloqJJQu7IOWyUpmk6aXGSQpVYiuFAZ1pUdGRW2Gmc-2QRnp1g8EnvpNdJ2tkRBx-_EvQZfDpJ3KkKOVeN2P8IwFhEv4nkuCkzwPEdxVpaV9CFXHbWf0afcTD_-5DrKVIumCsPCm4hYKMzq9Tl7v5r7oq5sLtQwt3TZ1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-8 left-8 flex items-center space-x-3">
+<div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Studio HQ | 45.8150° N, 15.9819° E</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] dark:bg-[#0e0e0e] full-width border-t border-[#353534]/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto font-['Noto_Serif'] font-light tracking-wide">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#e5e2e1] uppercase">HARMONY</div>
+<p class="text-[#d0c5af] max-w-xs leading-relaxed">Defining the intersections of luxury, architecture, and digital identity since 2012.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<p class="text-[#d4af37] uppercase text-xs tracking-widest mb-2">Navigation</p>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 duration-300" href="#">Services</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 duration-300" href="#">Portfolio</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 duration-300" href="#">Process</a>
+</div>
+<div class="flex flex-col space-y-4">
+<p class="text-[#d4af37] uppercase text-xs tracking-widest mb-2">Legal</p>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 duration-300" href="#">Privacy Policy</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 duration-300" href="#">Terms of Service</a>
+<div class="pt-8 text-[10px] text-[#353534] uppercase tracking-[0.2em]">
+                    © 2024 HARMONY ATELIER. ALL RIGHTS RESERVED.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

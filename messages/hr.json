@@ -1,0 +1,84 @@
+{
+  "Metadata": {
+    "siteName": "Harmony",
+    "homeTitle": "Harmony — digitalni marketing i web",
+    "homeDescription": "Digitalna agencija: marketing, izrada web stranica i web shopova.",
+    "servicesTitle": "Usluge — Harmony",
+    "servicesDescription": "Digitalni marketing, web dizajn i razvoj, e‑commerce.",
+    "aboutTitle": "O nama — Harmony",
+    "aboutDescription": "Upoznajte Harmony — digitalnu agenciju.",
+    "contactTitle": "Kontakt — Harmony",
+    "contactDescription": "Javite nam se za suradnju."
+  },
+  "Nav": {
+    "home": "Početna",
+    "services": "Usluge",
+    "about": "O nama",
+    "contact": "Kontakt",
+    "openMenu": "Otvori izbornik",
+    "closeMenu": "Zatvori izbornik",
+    "mainAria": "Glavna navigacija",
+    "skipToContent": "Preskoči na sadržaj"
+  },
+  "NotFound": {
+    "title": "Stranica nije pronađena",
+    "body": "Poveznica je neispravna ili je stranica uklonjena.",
+    "homeLink": "Na početnu"
+  },
+  "LocaleSwitcher": {
+    "label": "Jezik",
+    "hr": "Hrvatski",
+    "en": "English"
+  },
+  "Home": {
+    "heroEyebrow": "Digitalna agencija",
+    "heroTitle": "Harmonija između strategije, dizajna i koda.",
+    "heroLead": "Gradimo digitalnu prisutnost koja radi: marketing koji donosi rezultate, stranice koje se prodaju, i trgovine koje rastu.",
+    "heroCtaPrimary": "Započni projekt",
+    "heroCtaSecondary": "Pogledaj usluge",
+    "servicesHeading": "Što radimo",
+    "servicesIntro": "Tri stuba na kojima gradimo vaš rast — kasnije ćemo ih vizualno dotjerati uz vaš dizajn.",
+    "svcMarketingTitle": "Digitalni marketing",
+    "svcMarketingBody": "Kampanje, sadržaj i analitika usklađeni s poslovnim ciljevima.",
+    "svcWebTitle": "Web stranice",
+    "svcWebBody": "Brze, pristupačne i SEO‑prijateljske stranice koje predstavljaju vaš brend.",
+    "svcShopTitle": "Web shopovi",
+    "svcShopBody": "E‑commerce iskustvo od kataloga do naplate — jasno korisnicima, jednostavno vama.",
+    "ctaBandTitle": "Spremni za sljedeći korak?",
+    "ctaBandBody": "Pošaljite upit — odgovorimo s jasnim sljedećim koracima.",
+    "ctaBandButton": "Kontakt"
+  },
+  "Services": {
+    "title": "Usluge",
+    "intro": "Od strategije do objave — pratimo cijeli životni ciklus digitalnog proizvoda.",
+    "marketingTitle": "Digitalni marketing",
+    "marketingLead": "Privlačimo pravu publiku i mjerimo što funkcionira.",
+    "marketingBullets": "SEO i tehnička optimizacija|Plaćeni kanali i remarketing|Sadržaj i društvene mreže|Izvještavanje i kontinuirano poboljšanje",
+    "webTitle": "Web dizajn i razvoj",
+    "webLead": "Sučelje koje ljudi vole i kod koji inženjeri mogu održavati.",
+    "webBullets": "Next.js i moderni stack|Pristupačnost (a11y) i performanse|Responzivni layouti|Integracije (CRM, analitika, newsletter)",
+    "shopTitle": "Web shopovi i e‑commerce",
+    "shopLead": "Od prvog klika do potvrde narudžbe — manje trenja, više konverzija.",
+    "shopBullets": "Katalog, košarica, plaćanja|Upravljanje zalihama i narudžbama|Skalabilna arhitektura|Priprema za Phase 2 vizualni identitet"
+  },
+  "About": {
+    "title": "O nama",
+    "lead": "Harmony je digitalna agencija koja spaja marketing, dizajn i implementaciju.",
+    "body1": "Vjerujemo da dobar digitalni proizvod mora biti jasan korisnicima, izvediv za tim i mjerljiv za posao. Zato radimo u kratkim ciklusima, s transparentnom komunikacijom.",
+    "body2": "Ime Harmony nosi suptilan naglasak na skladu — kao harmonika koja širi i skuplja zvuk, tako i mi širimo vaš doseg i fokusiramo poruku kad je to potrebno.",
+    "placeholder": "Tim, fotografije i reference dolaze uskoro."
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "lead": "Javite nam se e‑poštom ili putem društvenih mreža.",
+    "emailLabel": "E‑pošta",
+    "emailPlaceholder": "kontakt@primjer.hr",
+    "socialHeading": "Društvene mreže",
+    "note": "Uskoro: kontakt obrazac s izravnom dostavom poruka."
+  },
+  "Footer": {
+    "rights": "Sva prava pridržana.",
+    "tagline": "Digitalni marketing · Web · E‑commerce",
+    "navAria": "Podnožje"
+  }
+}

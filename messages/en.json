@@ -1,0 +1,84 @@
+{
+  "Metadata": {
+    "siteName": "Harmony",
+    "homeTitle": "Harmony — digital marketing and web",
+    "homeDescription": "Digital agency: marketing, websites, and online stores.",
+    "servicesTitle": "Services — Harmony",
+    "servicesDescription": "Digital marketing, web design and development, e‑commerce.",
+    "aboutTitle": "About — Harmony",
+    "aboutDescription": "Meet Harmony — a digital agency.",
+    "contactTitle": "Contact — Harmony",
+    "contactDescription": "Get in touch to start a project."
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainAria": "Main navigation",
+    "skipToContent": "Skip to content"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "The link may be broken or the page was removed.",
+    "homeLink": "Back to home"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "hr": "Hrvatski",
+    "en": "English"
+  },
+  "Home": {
+    "heroEyebrow": "Digital agency",
+    "heroTitle": "Harmony between strategy, design, and code.",
+    "heroLead": "We build a digital presence that works: marketing that performs, sites that convert, and stores that scale.",
+    "heroCtaPrimary": "Start a project",
+    "heroCtaSecondary": "View services",
+    "servicesHeading": "What we do",
+    "servicesIntro": "Three pillars for your growth — visuals can be refined in Phase 2 with your design handoff.",
+    "svcMarketingTitle": "Digital marketing",
+    "svcMarketingBody": "Campaigns, content, and analytics aligned with business goals.",
+    "svcWebTitle": "Websites",
+    "svcWebBody": "Fast, accessible, SEO‑friendly sites that represent your brand.",
+    "svcShopTitle": "Online stores",
+    "svcShopBody": "E‑commerce from catalog to checkout — clear for customers, simple for you.",
+    "ctaBandTitle": "Ready for the next step?",
+    "ctaBandBody": "Send an inquiry — we’ll reply with clear next steps.",
+    "ctaBandButton": "Contact"
+  },
+  "Services": {
+    "title": "Services",
+    "intro": "From strategy to launch — we stay with you across the full lifecycle.",
+    "marketingTitle": "Digital marketing",
+    "marketingLead": "Reach the right audience and measure what works.",
+    "marketingBullets": "SEO and technical optimization|Paid channels and remarketing|Content and social|Reporting and continuous improvement",
+    "webTitle": "Web design and development",
+    "webLead": "Interfaces people enjoy and code engineers can maintain.",
+    "webBullets": "Next.js and a modern stack|Accessibility (a11y) and performance|Responsive layouts|Integrations (CRM, analytics, newsletter)",
+    "shopTitle": "E‑commerce and online stores",
+    "shopLead": "From first click to order confirmation — less friction, more conversions.",
+    "shopBullets": "Catalog, cart, payments|Orders and inventory basics|Scalable architecture|Ready for Phase 2 visual identity"
+  },
+  "About": {
+    "title": "About",
+    "lead": "Harmony is a digital agency that connects marketing, design, and implementation.",
+    "body1": "We believe great digital products must be clear for users, feasible for teams, and measurable for the business. We work in short cycles with transparent communication.",
+    "body2": "The name Harmony hints at balance — like an accordion expanding and contracting, we widen your reach and sharpen your message when it matters.",
+    "placeholder": "Team photos and case studies coming soon."
+  },
+  "Contact": {
+    "title": "Contact",
+    "lead": "Reach us by email or social media.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "hello@example.com",
+    "socialHeading": "Social",
+    "note": "Coming soon: contact form with direct delivery."
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Digital marketing · Web · E‑commerce",
+    "navAria": "Footer"
+  }
+}

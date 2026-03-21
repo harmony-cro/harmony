@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="hr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HARMONY | Digitalna Harmonija</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#dab36a",
+                        "inverse-primary": "#735c00",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-container": "#b2b3b3",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-container": "#604403",
+                        "outline-variant": "#4d4635",
+                        "primary-container": "#d4af37",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-background": "#e5e2e1",
+                        "primary-fixed": "#ffe088",
+                        "on-tertiary-container": "#444546",
+                        "inverse-surface": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary": "#412d00",
+                        "surface-dim": "#131313",
+                        "on-primary-container": "#554300",
+                        "surface-tint": "#e9c349",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "background": "#131313",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary-fixed": "#241a00",
+                        "surface-bright": "#3a3939",
+                        "tertiary": "#cecece",
+                        "on-tertiary": "#2f3131",
+                        "error-container": "#93000a",
+                        "outline": "#99907c",
+                        "surface-container-highest": "#353534",
+                        "secondary-fixed": "#ffdea5",
+                        "secondary-fixed-dim": "#e9c176",
+                        "error": "#ffb4ab",
+                        "on-primary": "#3c2f00",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-secondary-fixed": "#261900",
+                        "on-surface": "#e5e2e1",
+                        "secondary": "#e9c176",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "primary": "#f2ca50",
+                        "surface": "#131313",
+                        "surface-variant": "#353534"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .accordion-line {
+            width: 0.5px;
+            background-color: theme('colors.outline-variant');
+            opacity: 0.3;
+        }
+        .text-gold-gradient {
+            background: linear-gradient(45deg, #f2ca50, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#131313] dark:bg-[#131313] docked full-width top-0 z-50 border-b border-[#353534]/30">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e5e2e1] uppercase font-['Noto_Serif'] antialiased tracking-tight">
+                HARMONY
+            </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Noto_Serif'] antialiased tracking-tight text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1" href="#">Home</a>
+<a class="font-['Noto_Serif'] antialiased tracking-tight text-[#d0c5af] hover:text-[#e5e2e1] transition-colors duration-300" href="#">Services</a>
+<a class="font-['Noto_Serif'] antialiased tracking-tight text-[#d0c5af] hover:text-[#e5e2e1] transition-colors duration-300" href="#">About</a>
+<a class="font-['Noto_Serif'] antialiased tracking-tight text-[#d0c5af] hover:text-[#e5e2e1] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="text-[#f2ca50] font-['Noto_Serif'] antialiased tracking-tight cursor-pointer hover:opacity-80 transition-opacity">
+                HR | EN
+            </div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center px-12 py-24 overflow-hidden bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-12 w-full max-w-[1920px] mx-auto gap-12">
+<div class="md:col-span-8 z-10">
+<h1 class="font-headline text-5xl md:text-8xl font-bold leading-tight tracking-tighter mb-8">
+                        Vaša <span class="text-gold-gradient">digitalna harmonija</span><br/>počinje ovdje
+                    </h1>
+<p class="font-body text-on-surface-variant text-xl md:text-2xl max-w-2xl mb-12 font-light leading-relaxed">
+                        Mi smo boutique atelier za digitalna iskustva. Spajamo preciznost arhitekture s estetikom visoke mode kako bismo stvorili vaš jedinstveni online identitet.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary-container text-on-primary px-10 py-5 uppercase font-label font-semibold tracking-widest hover:opacity-90 transition-all active:scale-95">
+                            Započnite projekt
+                        </button>
+<button class="border border-outline/30 text-on-surface px-10 py-5 uppercase font-label font-semibold tracking-widest hover:bg-surface-container-high transition-all">
+                            Naš portfolio
+                        </button>
+</div>
+</div>
+<div class="md:col-span-4 relative flex items-center justify-center">
+<div class="w-full aspect-[3/4] bg-surface-container-high border-l border-outline-variant/20 relative group overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Abstract golden light swirling in a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ7n6G_j8EZEUORs7soR8K46vbIEtDf42ZIMt1arcoE28QMgEj9kLWCqf_cPalJRc5-kF_MvykYR-gWiyWF6BLpd4nZ1yD_l6xFasMEP_LWzps8CM9do-_6G2hllDMPQh3oSI52Ugbb3zzNVdkuKQUn7t7H3hK8i8-CbT-KmapYNJZsCVwlqD3IpxIbCcndzK4dhoGBmePswmiNvdG4EuO0vzeZpGwvjYOhDXxbm2lM8lPg5QrwgAyil-IqXew88Q-cwel1otnO29K"/>
+<div class="absolute inset-0 bg-surface/40 mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+<!-- Background Accent -->
+<div class="absolute -right-20 top-1/4 w-96 h-96 bg-primary/5 blur-[120px] rounded-full"></div>
+</section>
+<!-- Trust/Metrics Strip -->
+<section class="bg-surface-container-low border-y border-outline-variant/10 px-12 py-12">
+<div class="max-w-[1920px] mx-auto flex flex-wrap justify-between items-center gap-8 md:gap-0">
+<div class="flex flex-col">
+<span class="font-headline text-3xl text-primary">150+</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Uspješnih projekata</span>
+</div>
+<div class="h-12 w-px bg-outline-variant/20 hidden md:block"></div>
+<div class="flex flex-col">
+<span class="font-headline text-3xl text-primary">12</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Međunarodnih nagrada</span>
+</div>
+<div class="h-12 w-px bg-outline-variant/20 hidden md:block"></div>
+<div class="flex flex-col">
+<span class="font-headline text-3xl text-primary">98%</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Zadovoljnih klijenata</span>
+</div>
+<div class="h-12 w-px bg-outline-variant/20 hidden md:block"></div>
+<div class="flex flex-col">
+<span class="font-headline text-3xl text-primary">24/7</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Premium podrška</span>
+</div>
+</div>
+</section>
+<!-- Service Highlights (Staggered Layout) -->
+<section class="bg-surface px-12 py-32">
+<div class="max-w-[1920px] mx-auto">
+<div class="flex justify-between items-end mb-24">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl md:text-6xl mb-6">Naše ekspertize</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<p class="font-body text-on-surface-variant max-w-xs text-sm italic hidden md:block">
+                        Svaki projekt tretiramo kao unikatno umjetničko djelo, balansirajući formu i funkciju.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-24 md:gap-y-0">
+<!-- Service 1 -->
+<div class="md:col-span-5 mb-12 md:mb-0">
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-8 aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale" data-alt="Minimalist laptop showing digital marketing data visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9hBmB7cz7uF65XTjkURkLnjsCmuBWVdJ2VrlCsDNiAXfvMcVfl8ItCXPwsOQeEEN7rzpFtFTB67CziqQTLl3escH60YaTqYyQkDoGZiG5vER5LjFN9rKxblW4JuqcgffVu7rYnemdhykEhXO0Qkkb4-KfrIItN5hOI_oB8tl4w7Az_fnZmHyEKq1-QtujB8wfSlICKD3ihNEWut27CVu7CzJa1QnxSq0zeh7VbZ1XfnF5JjNR4Ol1_cq8aVwRHLozav0ONwupu45E"/>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:text-primary transition-colors">Digitalni marketing</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                Strategije vođene podacima koje pretvaraju poglede u lojalne klijente. Fokusiramo se na ROI i održivi rast vašeg brenda.
+                            </p>
+</div>
+</div>
+<!-- Service 2 (Staggered Down) -->
+<div class="md:col-start-8 md:col-span-5 md:pt-48">
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-8 aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale" data-alt="Sleek modern mobile interface design on a table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqpfBW5EjBeWmsQ8OYaiEUeZIR81G1R5dBTzhjjMASnHH63YnwRa1qA7e0u7UKVr0F5d34ruxuC62skZd1ObUaXLVdjUUB6tbbH1qUN1wWdWNxaPNIwKUO86zp9P2BMsAn4CwwF3Y0_n5fdtxnAJD2Gao5h3uZMVqdjQK6KaezSJs3YqmTFpPQ6FWcAEUqrmIm--R44Xzp_APDuy2aDf6A6Q8ko-z0bf1_cXZI47Q-DZvvmG6IqYxUMBYLNyViC65ibtF6hcEFm8qH"/>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:text-primary transition-colors">Web dizajn i UX</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                Kreiramo besprijekorna vizualna iskustva koja pričaju priču. Ljepota koja funkcionira na svakom ekranu.
+                            </p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="md:col-span-5 md:-mt-24">
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-8 aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale" data-alt="Luxury store interior with high-end products" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2WkFYFWRZ7XGHXy8rA8QM4N-kRZbpS9De0CEg8Ukray4aT5vUXgV84IJcYLZMLYk1UAAkweIIlhANyTJV3Pk569oRhZavhKxOcu_fSBZ0PfBg8Cn1fxCOLTguQX1thLB_aYtOkVNJ9dvt2xffie4A1UAMKTVkuSn4kvHyZNFIBaoVi3t-fFnPySZHRZg8Yqrbs2D3WzEac09b-cddjKDCwiaZm-RnSjRVqpUwQLr7hok14EnDhkxqg-YQDitMtAlNbHqdMsj266Ja"/>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:text-primary transition-colors">E-commerce rješenja</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                Od prve posjete do završetka kupovine. Gradimo prodajne kanale koji odišu luksuzom i sigurnošću.
+                            </p>
+</div>
+</div>
+<!-- Service 4 (Staggered) -->
+<div class="md:col-start-7 md:col-span-6 md:pt-32">
+<div class="group cursor-pointer flex gap-8 items-start">
+<span class="text-primary font-headline text-6xl opacity-20">04</span>
+<div>
+<h3 class="font-headline text-3xl mb-4 group-hover:text-primary transition-colors">SEO Optimizacija</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">
+                                    Osigurajte svoju poziciju na vrhu. Dubinska analiza i tehnička izvrsnost za maksimalnu vidljivost.
+                                </p>
+<a class="text-primary border-b border-primary pb-1 font-label text-sm uppercase tracking-widest hover:opacity-70 transition-opacity" href="#">Detaljnije o SEO</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "How we work" Accordion Section -->
+<section class="bg-surface-container-lowest px-12 py-32">
+<div class="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4">
+<h2 class="font-headline text-4xl md:text-6xl sticky top-32">Kako <br/><span class="italic font-normal">stvaramo</span></h2>
+</div>
+<div class="md:col-span-8">
+<!-- Step 1 -->
+<div class="border-t border-outline-variant/30 py-12 group cursor-pointer hover:bg-surface-container transition-colors px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-12">
+<span class="font-label text-on-surface-variant">01</span>
+<h4 class="font-headline text-2xl md:text-3xl">Otkrivanje i Strategija</h4>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="mt-8 max-w-2xl text-on-surface-variant font-light leading-relaxed hidden group-hover:block">
+                            Svaki projekt počinje dubokim uranjanjem u vaš brend. Analiziramo tržište, definiramo ciljeve i kreiramo mapu puta prema digitalnoj izvrsnosti.
+                        </div>
+</div>
+<!-- Step 2 -->
+<div class="border-t border-outline-variant/30 py-12 group cursor-pointer hover:bg-surface-container transition-colors px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-12">
+<span class="font-label text-on-surface-variant">02</span>
+<h4 class="font-headline text-2xl md:text-3xl">Dizajn i Prototip</h4>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="mt-8 max-w-2xl text-on-surface-variant font-light leading-relaxed hidden group-hover:block">
+                            Pretvaramo koncepte u vizualnu stvarnost. Fokusiramo se na intuitivnost i estetiku koja rezonira s vašom ciljanom publikom.
+                        </div>
+</div>
+<!-- Step 3 -->
+<div class="border-t border-outline-variant/30 py-12 group cursor-pointer hover:bg-surface-container transition-colors px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-12">
+<span class="font-label text-on-surface-variant">03</span>
+<h4 class="font-headline text-2xl md:text-3xl">Razvoj i Implementacija</h4>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="mt-8 max-w-2xl text-on-surface-variant font-light leading-relaxed hidden group-hover:block">
+                            Koristimo najmodernije tehnologije kako bismo osigurali brzinu, sigurnost i skalabilnost vašeg digitalnog proizvoda.
+                        </div>
+</div>
+<!-- Step 4 -->
+<div class="border-t border-b border-outline-variant/30 py-12 group cursor-pointer hover:bg-surface-container transition-colors px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-12">
+<span class="font-label text-on-surface-variant">04</span>
+<h4 class="font-headline text-2xl md:text-3xl">Analiza i Optimizacija</h4>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="mt-8 max-w-2xl text-on-surface-variant font-light leading-relaxed hidden group-hover:block">
+                            Lansiranje je samo početak. Kontinuirano pratimo performanse i fino podešavamo detalje za maksimalan učinak.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 px-12 text-center bg-surface relative overflow-hidden">
+<div class="max-w-4xl mx-auto z-10 relative">
+<h2 class="font-headline text-5xl md:text-7xl mb-12">Spremni za harmoniju?</h2>
+<p class="font-body text-on-surface-variant text-xl mb-16 max-w-xl mx-auto font-light">
+                    Vaša vizija zaslužuje biti prezentirana na najvišoj razini. Javite nam se za besplatne konzultacije.
+                </p>
+<button class="bg-primary text-on-primary px-16 py-6 uppercase font-label font-bold tracking-[0.2em] hover:bg-primary-fixed transition-all shadow-xl">
+                    Pošaljite upit
+                </button>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute left-0 top-0 w-full h-full pointer-events-none opacity-5">
+<div class="absolute top-1/2 left-1/4 w-px h-full bg-outline transform -translate-y-1/2"></div>
+<div class="absolute top-1/2 right-1/4 w-px h-full bg-outline transform -translate-y-1/2"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] dark:bg-[#0e0e0e] full-width border-t border-[#353534]/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto">
+<div class="flex flex-col gap-6">
+<div class="text-xl font-bold text-[#e5e2e1] font-['Noto_Serif'] font-light tracking-wide">HARMONY ATELIER</div>
+<p class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide max-w-xs">
+                    Inspiriramo digitalnu izvrsnost kroz bezvremenski dizajn i inovativnu tehnologiju.
+                </p>
+<div class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-[#d4af37] cursor-pointer hover:opacity-70">language</span>
+<span class="material-symbols-outlined text-[#d4af37] cursor-pointer hover:opacity-70">public</span>
+<span class="material-symbols-outlined text-[#d4af37] cursor-pointer hover:opacity-70">alternate_email</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-[#e5e2e1] font-bold uppercase text-xs tracking-widest mb-4">Navigacija</h5>
+<a class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 transition-transform duration-300" href="#">Services</a>
+<a class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 transition-transform duration-300" href="#">Portfolio</a>
+<a class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 transition-transform duration-300" href="#">Process</a>
+<a class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 transition-transform duration-300" href="#">Privacy</a>
+<a class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all hover:translate-x-1 transition-transform duration-300" href="#">Terms</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-[#e5e2e1] font-bold uppercase text-xs tracking-widest mb-4">Ured</h5>
+<p class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide">Radnička cesta 80<br/>10000 Zagreb, Hrvatska</p>
+<p class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide mt-4">hello@harmony.hr<br/>+385 1 234 5678</p>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#353534]/10 text-center md:text-left">
+<span class="text-[#d0c5af] font-['Noto_Serif'] font-light tracking-wide text-xs">© 2024 HARMONY ATELIER. ALL RIGHTS RESERVED.</span>
+</div>
+</footer>
+</body></html>

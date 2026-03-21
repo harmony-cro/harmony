@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="hr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#dab36a",
+              "inverse-primary": "#735c00",
+              "on-tertiary-fixed-variant": "#454747",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-container": "#b2b3b3",
+              "on-surface-variant": "#d0c5af",
+              "surface-container-lowest": "#0e0e0e",
+              "secondary-container": "#604403",
+              "outline-variant": "#4d4635",
+              "primary-container": "#d4af37",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed-variant": "#574500",
+              "on-background": "#e5e2e1",
+              "primary-fixed": "#ffe088",
+              "on-tertiary-container": "#444546",
+              "inverse-surface": "#e5e2e1",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "surface-container": "#201f1f",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary": "#412d00",
+              "surface-dim": "#131313",
+              "on-primary-container": "#554300",
+              "surface-tint": "#e9c349",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "background": "#131313",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-primary-fixed": "#241a00",
+              "surface-bright": "#3a3939",
+              "tertiary": "#cecece",
+              "on-tertiary": "#2f3131",
+              "error-container": "#93000a",
+              "outline": "#99907c",
+              "surface-container-highest": "#353534",
+              "secondary-fixed": "#ffdea5",
+              "secondary-fixed-dim": "#e9c176",
+              "error": "#ffb4ab",
+              "on-primary": "#3c2f00",
+              "primary-fixed-dim": "#e9c349",
+              "on-secondary-fixed": "#261900",
+              "on-surface": "#e5e2e1",
+              "secondary": "#e9c176",
+              "tertiary-fixed": "#e2e2e2",
+              "on-secondary-fixed-variant": "#5d4201",
+              "primary": "#f2ca50",
+              "surface": "#131313",
+              "surface-variant": "#353534"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .accordion-line {
+            width: 0.5px;
+            background-color: #4d4635;
+            opacity: 0.5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<header class="bg-[#131313] dark:bg-[#131313] docked full-width top-0 z-50 border-b border-[#353534]/30 flat no shadows font-['Noto_Serif'] antialiased tracking-tight sticky">
+<div class="flex justify-between items-center w-full px-6 py-5 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e5e2e1] uppercase">HARMONY</div>
+<div class="flex items-center gap-6">
+<span class="text-[#f2ca50] dark:text-[#f2ca50] text-sm font-medium tracking-widest">HR | EN</span>
+<button class="material-symbols-outlined text-[#e5e2e1]">menu</button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative min-h-[751px] flex flex-col justify-end px-6 pb-20 pt-10 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover opacity-40 grayscale" data-alt="Modern minimalist architectural interior with harsh shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgZXnHkndJtMYZLlcksxtRXH0R5DqFALWK-0u0Ac8fvt28SHrkTxfT0zBcWFMENuxuxD16ELS95e731_YY645zVlKTBkH4Poxc3wgVhKNYZYxBIN_5UPvB8ninDwlZwAQeyM6i6I3a1vNi9SDXmKs0WB-7ZmqVWda9YP3P8bWfriqdL5A2y9iXEy9qsjWd_2FS4BbMfdzxf8iC-w2-jDn_P1wFtLhBKcXsTUtlm7n_v9Xt7x5rKXvSf9EF9-Utj9D1lQ0br9ZshD_j"/>
+</div>
+<div class="relative z-20 space-y-6">
+<div class="inline-block px-3 py-1 border border-primary/30 text-primary text-[10px] tracking-[0.3em] uppercase">Digitalni Atelier</div>
+<h1 class="font-headline text-5xl md:text-7xl leading-[1.1] tracking-tighter">
+                    Stvaramo <span class="text-primary italic">digitalnu</span> harmoniju.
+                </h1>
+<p class="text-on-surface-variant max-w-xs font-light leading-relaxed">
+                    Ekskluzivna rješenja za brendove koji zahtijevaju savršenstvo u svakom pikselu.
+                </p>
+<div class="pt-8">
+<button class="bg-primary-container text-on-primary px-8 py-4 text-xs font-bold tracking-[0.2em] uppercase transition-transform active:scale-95">
+                        Započnimo Projekt
+                    </button>
+</div>
+</div>
+<div class="absolute right-0 bottom-40 w-px h-64 bg-outline-variant/30 hidden md:block"></div>
+</section>
+<section class="bg-surface-container-lowest py-24 px-6 border-t border-outline-variant/10">
+<div class="flex flex-col gap-12">
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-6">
+<h2 class="font-headline text-3xl">Usluge</h2>
+<span class="text-primary-container font-headline italic">01 — 04</span>
+</div>
+<div class="grid grid-cols-1 gap-16">
+<div class="flex flex-col gap-6 group">
+<div class="overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="Sophisticated UI design interface on a dark screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACny0WS_EFJqBEQ9PkdboM4sbJt5bSnFBv_RZjihrF3ctcCwI6qgljcPezYYhuPAa2ZVrflHI-jPoxKeUlU806okwnsZLGAXvLsSpxFIpCQIF01JxZERIhNh8_n4LC_7VcVAaSVNcTHjPGTlT6jXOklF8n8vU1ukySl8Ixll1hSn1mzUTZH3--h5cB6QLf25HRFCl8fLaWUq_iFXdqkrb0vnRwB_lAmijjKl73zCIwIeni-yxPBIXWljh6NmBKB91lBAm0UTRJ6N5U"/>
+</div>
+<div class="space-y-2">
+<h3 class="font-headline text-2xl">Digitalni Dizajn</h3>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Kreativna direkcija i UI/UX dizajn koji prkosi konvencijama.</p>
+<a class="inline-block pt-2 text-primary text-[10px] tracking-widest uppercase border-b border-primary/30 pb-1" href="#">Saznaj Više</a>
+</div>
+</div>
+<div class="flex flex-col gap-6 mt-12 group">
+<div class="overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="Minimalist high tech hardware setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH62wZMDjjYLxiSyBmUH8SRp7TBGAamKeAht5eQ7P2rhrw8yzXjxBEV1wy4hf0DZ5_fTJ5jpvE6sFvXe_C5zKnSzEhmKHwbJ6PhrIsEYuzXCEXF2OavzyAn0OxnYC2NVxmLUSsGl4Hqdm2p6V_JrQ7Zsfc9wvYRiKmiX65yPzD_yrdpEWpuqggBkGZ1rd6vIprBS9v_huuVil1QBYCncH3oSwL1sdmTJcKZLtffDH1f6baGDfTLgnk9ox9SvAppD-xOlvr2wNan-op"/>
+</div>
+<div class="space-y-2">
+<h3 class="font-headline text-2xl">Razvoj Softvera</h3>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Robusna arhitektura upakirana u besprijekoran performans.</p>
+<a class="inline-block pt-2 text-primary text-[10px] tracking-widest uppercase border-b border-primary/30 pb-1" href="#">Saznaj Više</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface py-24">
+<div class="px-6 mb-16">
+<h2 class="font-headline text-4xl mb-4 text-center">Kako radimo</h2>
+<div class="w-12 h-px bg-primary mx-auto"></div>
+</div>
+<div class="flex flex-col">
+<div class="group border-y border-outline-variant/20 px-6 py-10 transition-colors hover:bg-surface-container-low">
+<div class="flex items-start justify-between">
+<div class="flex gap-8">
+<span class="font-headline text-primary opacity-50">01</span>
+<div class="space-y-4">
+<h4 class="font-headline text-xl tracking-wide uppercase">Otkrivanje</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500">
+                                    Duboko zaranjamo u srž vašeg brenda kako bismo otkrili autentičnu priču koja zaslužuje biti ispričana.
+                                </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:rotate-45 transition-transform">add</span>
+</div>
+</div>
+<div class="group border-b border-outline-variant/20 px-6 py-10 transition-colors hover:bg-surface-container-low">
+<div class="flex items-start justify-between">
+<div class="flex gap-8">
+<span class="font-headline text-primary opacity-50">02</span>
+<div class="space-y-4">
+<h4 class="font-headline text-xl tracking-wide uppercase">Konceptualizacija</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500">
+                                    Pretvaramo ideje u vizualne jezike, stvarajući jedinstvene digitalne otiske.
+                                </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:rotate-45 transition-transform">add</span>
+</div>
+</div>
+<div class="group border-b border-outline-variant/20 px-6 py-10 transition-colors hover:bg-surface-container-low">
+<div class="flex items-start justify-between">
+<div class="flex gap-8">
+<span class="font-headline text-primary opacity-50">03</span>
+<div class="space-y-4">
+<h4 class="font-headline text-xl tracking-wide uppercase">Realizacija</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500">
+                                    Precizna izrada svakog elementa uz kontinuirano testiranje i optimizaciju.
+                                </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:rotate-45 transition-transform">add</span>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-lowest py-24 px-6">
+<div class="bg-surface-container-high p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[80px]"></div>
+<div class="relative z-10 space-y-8 text-center">
+<h2 class="font-headline text-3xl">Spremni za transformaciju?</h2>
+<p class="text-on-surface-variant font-light">Naš atelier je otvoren za nove suradnje. Stvorimo nešto izvanredno zajedno.</p>
+<div class="flex flex-col gap-4 pt-4">
+<button class="bg-primary text-on-primary py-5 text-[10px] tracking-[0.3em] font-bold uppercase">Pošaljite Upit</button>
+<button class="border border-outline/30 text-on-surface py-5 text-[10px] tracking-[0.3em] font-bold uppercase">Pogledajte Portfolio</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#0e0e0e] dark:bg-[#0e0e0e] full-width border-t border-[#353534]/20 font-['Noto_Serif'] font-light tracking-wide tonal shift from surface to surface-container-lowest flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 py-16 w-full max-w-[1920px] mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#e5e2e1]">HARMONY</div>
+<p class="text-[#d0c5af] text-sm leading-loose max-w-xs">
+                    Gdje se preciznost susreće s poezijom. Vaš partner u digitalnoj izvrsnosti.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<h5 class="text-[#f2ca50] text-[10px] tracking-widest uppercase">Navigacija</h5>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-all text-sm" href="#">Services</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-all text-sm" href="#">Portfolio</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-all text-sm" href="#">Process</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-[#f2ca50] text-[10px] tracking-widest uppercase">Legalno</h5>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-all text-sm" href="#">Privacy</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-all text-sm" href="#">Terms</a>
+</div>
+</div>
+<div class="space-y-6 pt-8 md:pt-0">
+<h5 class="text-[#f2ca50] text-[10px] tracking-widest uppercase">Pratite Nas</h5>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#d0c5af] hover:text-[#f2ca50] cursor-pointer">share</span>
+<span class="material-symbols-outlined text-[#d0c5af] hover:text-[#f2ca50] cursor-pointer">public</span>
+<span class="material-symbols-outlined text-[#d0c5af] hover:text-[#f2ca50] cursor-pointer">alternate_email</span>
+</div>
+</div>
+<div class="col-span-1 md:col-span-3 pt-12 border-t border-outline-variant/10">
+<p class="text-[10px] tracking-[0.2em] text-[#d0c5af]/50 uppercase">© 2024 HARMONY ATELIER. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+</body></html>
