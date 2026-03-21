@@ -15,9 +15,7 @@ export const social = {
   instagram: "https://www.instagram.com/harmony_sb/",
 } as const;
 
-/** Map / editorial image from Stitch contact prototype */
-export const contactMapImageUrl =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCkWjeFSA-LG-hVlMFQY8wG2kz3LTrOy_o4Ih6_q2tl0hs_z2TfXu0aP9yElMf6nslad3PyT-1LI0xbcHlJG4LIQLSwnjPfVP2Ts4AOq2O7OloqJJQu7IOWyUpmk6aXGSQpVYiuFAZ1pUdGRW2Gmc-2QRnp1g8EnvpNdJ2tkRBx-_EvQZfDpJ3KkKOVeN2P8IwFhEv4nkuCkzwPEdxVpaV9CFXHbWf0afcTD_-5DrKVIumCsPCm4hYKMzq9Tl7v5r7oq5sLtQwt3TZ1";
+export const contactMapImageUrl = "/images/contactMapImageUrl.png";
 
 export function siteUrl() {
   const raw =

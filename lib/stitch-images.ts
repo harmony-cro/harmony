@@ -1,22 +1,14 @@
-/** Remote assets from Stitch HTML prototypes (Google CDN). */
-
 export const stitchImages = {
-  homeHero:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCJ7n6G_j8EZEUORs7soR8K46vbIEtDf42ZIMt1arcoE28QMgEj9kLWCqf_cPalJRc5-kF_MvykYR-gWiyWF6BLpd4nZ1yD_l6xFasMEP_LWzps8CM9do-_6G2hllDMPQh3oSI52Ugbb3zzNVdkuKQUn7t7H3hK8i8-CbT-KmapYNJZsCVwlqD3IpxIbCcndzK4dhoGBmePswmiNvdG4EuO0vzeZpGwvjYOhDXxbm2lM8lPg5QrwgAyil-IqXew88Q-cwel1otnO29K",
-  homeMarketing:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuD9hBmB7cz7uF65XTjkURkLnjsCmuBWVdJ2VrlCsDNiAXfvMcVfl8ItCXPwsOQeEEN7rzpFtFTB67CziqQTLl3escH60YaTqYyQkDoGZiG5vER5LjFN9rKxblW4JuqcgffVu7rYnemdhykEhXO0Qkkb4-KfrIItN5hOI_oB8tl4w7Az_fnZmHyEKq1-QtujB8wfSlICKD3ihNEWut27CVu7CzJa1QnxSq0zeh7VbZ1XfnF5JjNR4Ol1_cq8aVwRHLozav0ONwupu45E",
-  homeWeb:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCqpfBW5EjBeWmsQ8OYaiEUeZIR81G1R5dBTzhjjMASnHH63YnwRa1qA7e0u7UKVr0F5d34ruxuC62skZd1ObUaXLVdjUUB6tbbH1qUN1wWdWNxaPNIwKUO86zp9P2BMsAn4CwwF3Y0_n5fdtxnAJD2Gao5h3uZMVqdjQK6KaezSJs3YqmTFpPQ6FWcAEUqrmIm--R44Xzp_APDuy2aDf6A6Q8ko-z0bf1_cXZI47Q-DZvvmG6IqYxUMBYLNyViC65ibtF6hcEFm8qH",
-  homeCommerce:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuB2WkFYFWRZ7XGHXy8rA8QM4N-kRZbpS9De0CEg8Ukray4aT5vUXgV84IJcYLZMLYk1UAAkweIIlhANyTJV3Pk569oRhZavhKxOcu_fSBZ0PfBg8Cn1fxCOLTguQX1thLB_aYtOkVNJ9dvt2xffie4A1UAMKTVkuSn4kvHyZNFIBaoVi3t-fFnPySZHRZg8Yqrbs2D3WzEac09b-cddjKDCwiaZm-RnSjRVqpUwQLr7hok14EnDhkxqg-YQDitMtAlNbHqdMsj266Ja",
-  aboutWorkspace:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCb9BwMaTIUWh_-g-AqOpC9gKnyirtbMberoztxgDSK61U9YFuwYiwNcCHLSiva9tGGA1ydfj0PAx4oJc3b4il8LuhQUe5dfn398pXfvhPU3FnJkWjSWcM1ZXxI1xgr97FRXFLLXodTbSzBgZoYeKt-AjERfmlCCmswhMQz4QOu5cw5ZX8p9XuL5A9fIFmjlXpE8-uopEDnA8nzWiGwUl0Zx6ipC7mYOLh2ezIyKs7qN_W6khjE_3Ok5fohEKwOkBHPLrnkpxgoQQ19",
+  homeHero: "/images/home-hero.png",
+  homeMarketing: "/images/home-marketing.png",
+  homeWeb: "/images/homeWeb.png",
+  homeCommerce: "/images/homeCommerce.png",
+  aboutWorkspace: "/images/aboutWorkspace.png",
   aboutJulian:
     "https://lh3.googleusercontent.com/aida-public/AB6AXuB9EdgKz_oAcDaSDelNMSx-T3tVv3nfkS-nVWB1KrmABUSj4lnqiWlUfM7MmLQhA6T_lWqgGSVyBKH1qXQyZZ19ctN7WcEDNzuw3u2mCemi6FtrpW0OjI09JVa23d5YC2437V-YbYdQeZXdRq6L66amg31S8lnBbSxDJHROWz9PtX0c4aM-ObCeeBwwCvtH5A_LFxEHHboLnZPHGn_0RTpo-LdBTjRi_k6qQZPbt_HFvFp7xnJRZhPAuXcDF4DjDWMcJkOJK5ilUamL",
   aboutElena:
     "https://lh3.googleusercontent.com/aida-public/AB6AXuCrTaVo7m9rDDOs03P5UahTy2gYmly-f4OOfdjVC0hPl_t_C3X35-qFANxuhpX8-iAHIFbIs9OOK-yfl0YPikFem0IYt0d8pMTDBhVO4lltdjti9kV9PUTXob9F5tlUlzTYs4WyYEHu-z7isKmOMYvmcplnutBLQ3cias3iTfJNeQitAk6qY1TAjPY3n1L1fhLPLapUT4sHaijOjLSJ_8PfXhnukb1n2EY-8VMMlUTIMkOpHVAoC6hUrzHVTbnU1t37-BgbGiJGTMWe",
   aboutSoren:
     "https://lh3.googleusercontent.com/aida-public/AB6AXuCCvTix78LQP5nBEJf8VmoTJETfysHrn62jBAx9v1NvVIyE9nSrL4xwIAmwrvtui7RFv0vL41VFvQdygNRMgTfUY9H22axJayOsB6tK30nHULpDi0D-Mu4FaZwN2cAyypv0M_GzWkXQ-IYVzhVs3LqrBOkTwQdDXrqS05zswXivBjVeF_PxxTXYk69vsyLSHdZ8hCApW3Vesxdj6KxHKAnirQfwWbuTchXcmFLKccPSTcRgfYekgwgxmXybN_T7NIRmrXU8AyU4uNW-",
-  servicesWeb:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuC7z-Srznc70q-oAC8y7trXDO7I4pqYNN2dBM0k3bQljGinct76MqNhTfb7SmBIwXsXRe_Q-Dc5tCWTnjhZ-xm3FQ___cphyERP9NN8kw3CuUisrtqwf2aEriV0FkHlrdyEltbi5Y8YIfi5vFa_nW6xWxJ2jTEstbGJcdPj6rCJkUoRkZdYxRnrtkC5jM0ClcVrpI6bkM153ZlmSoVCtuT9XbFCnxLO8jhWxLhBj8uE6hlkogXAr26irwrwpFiZW7Tf57zWeCtY0CdD",
+  servicesWeb: "/images/servicesWeb.png",
 } as const;
