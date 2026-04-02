@@ -12,17 +12,16 @@ export default async function LoginPage({
   return (
     <div className="min-h-screen flex items-center justify-center p-4" style={{ background: 'var(--color-background)' }}>
       <div className="w-full max-w-sm">
-        <div className="mb-8 text-center">
-          <span className="text-2xl font-bold tracking-tight" style={{ color: 'var(--color-primary)' }}>
-            Harmony
-          </span>
-          <p className="mt-1 text-sm" style={{ color: 'var(--color-on-surface-variant)' }}>Dashboard</p>
+        <div className="mb-10 text-center">
+          <h1 className="text-gold-gradient text-4xl font-extrabold tracking-tight">Harmony</h1>
+          <div className="mt-3 mx-auto h-px w-10" style={{ background: 'var(--color-primary)' }} />
+          <p className="mt-3 text-xs uppercase tracking-[0.25em]" style={{ color: 'var(--color-on-surface-variant)' }}>Dashboard</p>
         </div>
 
-        <div className="rounded p-6" style={{ background: 'var(--color-surface-container-low)', border: '1px solid var(--color-outline-variant)' }}>
-          <h1 className="mb-6 text-base font-semibold" style={{ color: 'var(--color-on-surface)' }}>
+        <div className="p-6" style={{ background: 'var(--color-surface-container-low)', border: '1px solid var(--color-outline-variant)', borderTop: '2px solid var(--color-primary)' }}>
+          <h2 className="mb-6 text-base font-semibold" style={{ color: 'var(--color-on-surface)' }}>
             Sign in
-          </h1>
+          </h2>
 
           <form action={login} className="flex flex-col gap-4">
             <div className="flex flex-col gap-1.5">

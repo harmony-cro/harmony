@@ -15,20 +15,20 @@ export function SitesTab() {
           { label: 'Pending', value: pending,       color: 'var(--color-primary)' },
           { label: 'Parked',  value: parked,        color: 'var(--color-on-surface-variant)' },
         ].map(({ label, value, color }) => (
-          <div key={label} className="rounded p-3 min-w-[80px]"
-            style={{ background: 'var(--color-surface-container-low)', border: '1px solid var(--color-outline-variant)' }}>
-            <div className="text-2xl font-bold" style={{ color }}>{value}</div>
-            <div className="text-xs" style={{ color: 'var(--color-on-surface-variant)' }}>{label}</div>
+          <div key={label} className="p-4 min-w-[88px]"
+            style={{ background: 'var(--color-surface-container-low)', border: '1px solid var(--color-outline-variant)', borderLeft: `3px solid ${color}` }}>
+            <div className="text-3xl font-extrabold leading-none" style={{ color }}>{value}</div>
+            <div className="mt-1.5 text-xs uppercase tracking-[0.15em]" style={{ color: 'var(--color-on-surface-variant)' }}>{label}</div>
           </div>
         ))}
       </div>
 
-      <div className="overflow-x-auto rounded" style={{ border: '1px solid var(--color-outline-variant)', background: 'var(--color-surface-container-low)' }}>
+      <div className="overflow-x-auto" style={{ border: '1px solid var(--color-outline-variant)', background: 'var(--color-surface-container-low)' }}>
         <table className="w-full text-left">
           <thead>
-            <tr style={{ borderBottom: '1px solid var(--color-outline-variant)' }}>
+            <tr style={{ borderBottom: '1px solid var(--color-outline-variant)', background: 'var(--color-surface-container)' }}>
               {['Site', 'Category', 'Status', 'Hosting expiry', 'Domain expiry', 'Cost', 'Client'].map(h => (
-                <th key={h} className="px-4 py-2.5 text-xs font-semibold uppercase tracking-wide"
+                <th key={h} className="px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em]"
                   style={{ color: 'var(--color-on-surface-variant)' }}>
                   {h}
                 </th>

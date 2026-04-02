@@ -22,11 +22,11 @@ const CATEGORY_LABEL: Record<number, string> = { 1: 'Brochure', 2: 'CMS', 3: 'Sh
 
 export function PipelineColumn({ stage, sites }: { stage: MigrationStatus; sites: Site[] }) {
   return (
-    <div className="flex flex-col gap-2 min-w-[160px]">
-      <div className="flex items-center justify-between rounded px-3 py-2"
-        style={{ background: 'var(--color-surface-container-low)', border: '1px solid var(--color-outline-variant)' }}>
-        <span className="text-xs font-semibold" style={{ color: STAGE_COLOR[stage] }}>{STAGE_LABEL[stage]}</span>
-        <span className="ml-2 rounded px-1.5 py-0.5 text-xs font-mono"
+    <div className="flex flex-col gap-2 min-w-[180px]">
+      <div className="flex items-center justify-between px-3 py-2.5"
+        style={{ background: 'var(--color-surface-container)', borderTop: `2px solid ${STAGE_COLOR[stage]}`, borderRight: '1px solid var(--color-outline-variant)', borderBottom: '1px solid var(--color-outline-variant)', borderLeft: '1px solid var(--color-outline-variant)' }}>
+        <span className="text-xs font-semibold uppercase tracking-[0.1em]" style={{ color: STAGE_COLOR[stage] }}>{STAGE_LABEL[stage]}</span>
+        <span className="ml-2 px-1.5 py-0.5 text-xs font-mono"
           style={{ background: 'var(--color-surface-container-highest)', color: 'var(--color-on-surface-variant)' }}>
           {sites.length}
         </span>
@@ -39,8 +39,8 @@ export function PipelineColumn({ stage, sites }: { stage: MigrationStatus; sites
             Empty
           </div>
         ) : sites.map(site => (
-          <div key={site.id} className="rounded px-3 py-2 transition-colors"
-            style={{ background: 'var(--color-surface-container-low)', border: '1px solid var(--color-outline-variant)' }}>
+          <div key={site.id} className="px-3 py-2.5 transition-colors"
+            style={{ background: 'var(--color-surface-container-low)', borderTop: '1px solid var(--color-outline-variant)', borderRight: '1px solid var(--color-outline-variant)', borderBottom: '1px solid var(--color-outline-variant)', borderLeft: `2px solid ${STAGE_COLOR[stage]}` }}>
             <div className="text-sm font-medium leading-tight" style={{ color: 'var(--color-on-surface)' }}>{site.name}</div>
             <div className="mt-0.5 flex items-center gap-1.5">
               <a href={site.url} target="_blank" rel="noopener noreferrer"

@@ -16,18 +16,17 @@ export default async function DashboardPage({
     <div className="flex min-h-screen flex-col" style={{ background: 'var(--color-background)', color: 'var(--color-on-surface)' }}>
       {/* Top bar */}
       <header
-        className="sticky top-0 z-10 flex items-center justify-between px-6 py-3"
-        style={{ background: 'var(--color-surface-container-low)', borderBottom: '1px solid var(--color-outline-variant)' }}
+        className="atelier-glass sticky top-0 z-10 flex items-center justify-between px-6 py-4"
+        style={{ borderBottom: '1px solid var(--color-outline-variant)' }}
       >
-        <span className="text-base font-bold tracking-tight">
-          <span style={{ color: 'var(--color-primary)' }}>Harmony</span>
-          {' '}
-          <span className="font-normal" style={{ color: 'var(--color-on-surface-variant)' }}>Dashboard</span>
+        <span className="flex items-baseline gap-2 text-base tracking-tight">
+          <span className="text-gold-gradient font-extrabold">Harmony</span>
+          <span className="font-light text-sm" style={{ color: 'var(--color-on-surface-variant)' }}>Dashboard</span>
         </span>
         <form action={logout}>
           <button
             type="submit"
-            className="rounded px-3 py-1.5 text-xs transition-colors"
+            className="px-3 py-1.5 text-xs font-medium uppercase tracking-wide transition-opacity hover:opacity-70"
             style={{ color: 'var(--color-on-surface-variant)' }}
           >
             Logout
@@ -37,7 +36,7 @@ export default async function DashboardPage({
 
       {/* Tab nav */}
       <nav
-        className="flex gap-1 px-6"
+        className="flex gap-0 px-6"
         style={{ background: 'var(--color-surface-container-low)', borderBottom: '1px solid var(--color-outline-variant)' }}
       >
         {([
@@ -47,10 +46,10 @@ export default async function DashboardPage({
           <a
             key={key}
             href={`/dashboard?tab=${key}`}
-            className="px-4 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors"
+            className="px-5 py-3 text-xs font-semibold uppercase tracking-[0.12em] border-b-2 -mb-px transition-colors"
             style={{
               borderColor: activeTab === key ? 'var(--color-primary)' : 'transparent',
-              color: activeTab === key ? 'var(--color-primary)' : 'var(--color-on-surface-variant)',
+              color: activeTab === key ? 'var(--color-on-surface)' : 'var(--color-on-surface-variant)',
             }}
           >
             {label}
