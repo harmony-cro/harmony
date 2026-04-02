@@ -25,6 +25,14 @@ export function SiteCard({ site }: { site: Site }) {
           style={{ color: 'var(--color-on-surface-variant)' }}>
           {site.url.replace('https://', '')}
         </a>
+        {site.stagingUrl && (
+          <a href={site.stagingUrl} target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-1 text-xs transition-colors hover:opacity-80 mt-0.5"
+            style={{ color: 'var(--color-primary)' }}>
+            <span style={{ fontSize: '10px', background: 'var(--color-primary)', color: 'var(--color-on-primary)', borderRadius: '3px', padding: '0 4px', lineHeight: '16px' }}>staging</span>
+            {site.stagingUrl.replace('https://', '')}
+          </a>
+        )}
       </td>
       <td className="px-4 py-3">
         <span className="rounded px-2 py-0.5 text-xs" style={{ background: 'var(--color-surface-container)', color: 'var(--color-on-surface-variant)' }}>
