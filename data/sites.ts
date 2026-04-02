@@ -200,6 +200,7 @@ export const sites: Site[] = [
     id: 'taxijoker',
     name: 'Taxi Joker',
     url: 'https://taxijoker.hr',
+    stagingUrl: 'https://lightgreen-dugong-809113.hostingersite.com',
     category: 1,
     status: 'pending',
     hostingExpiry: null,
@@ -207,8 +208,8 @@ export const sites: Site[] = [
     monthlyCost: null,
     annualCost: null,
     client: { name: 'Taxi Joker', email: null, phone: null },
-    migrationStatus: 'pending',
-    notes: 'Taxi service — empty repo exists at business/taxijoker',
+    migrationStatus: 'content-migrated',
+    notes: 'Next.js site on staging. Pending client review and DNS cutover.',
   },
   {
     id: 'smart-volt',
