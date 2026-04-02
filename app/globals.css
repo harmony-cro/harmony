@@ -59,6 +59,9 @@
   --color-outline: #99907c;
   --color-outline-variant: #4d4635;
 
+  /* Dashboard — status colours */
+  --color-dash-green: #4ade80;
+
   /* Fonts — variables set on <html> from next/font */
   --font-headline: var(--font-noto-serif), ui-serif, Georgia, serif;
   --font-body: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;

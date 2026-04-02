@@ -1,9 +1,0 @@
-name: harmony-web
-
-services:
-  harmony-app:
-    image: ghcr.io/scallywer/harmony:latest
-    container_name: harmony-web
-    restart: unless-stopped
-    ports:
-      - "8888:3000"
