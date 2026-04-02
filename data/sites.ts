@@ -12,6 +12,7 @@ export interface Site {
   id: string
   name: string
   url: string
+  stagingUrl?: string
   category: SiteCategory
   status: SiteStatus
   hostingExpiry: string | null   // ISO date 'YYYY-MM-DD'
